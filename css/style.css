@@ -14,7 +14,7 @@ img{
 
 .container{
   width: 60%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .error{
@@ -74,5 +74,9 @@ img{
 }
 
 .task-container li.done{
+  text-decoration: line-through;
+}
+
+.completed {
   text-decoration: line-through;
 }

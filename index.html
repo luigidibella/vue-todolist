@@ -44,9 +44,13 @@
       
       <ul v-if="todoList.length > 0">
         
-        <li v-for="(task, indice) in todoList">
-          <span>{{ task }}</span>
-          <i @click="eliminaTask(indice)" class="fa-solid fa-trash-can"></i>
+        <li 
+          v-for="(task, indice) in todoList"
+          :class="{'completed': task.done === true}"
+          @click="task.done = !task.done"
+        >
+          <span>{{ task.text }}</span>
+          <i @click.stop="eliminaTask(indice)" class="fa-solid fa-trash-can"></i>
         </li>
 
       </ul>
