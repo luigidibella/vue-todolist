@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- VueJs  -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <!-- Font Awesone  -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css' integrity='sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==' crossorigin='anonymous'/>
+
+  <!-- Custom CSS  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Vue Todo List</title>
+</head>
+<body>
+
+  <div id="app" class="container">
+
+    <div class="logo">
+      <img src="img/logo.png" alt="logo">
+    </div>
+
+    <div class="new-task">
+
+      <input  placeholder="Nuovo task"type="text">
+      <button >Aggiungi</button>
+      <p class="error"></p>
+    </div>
+
+    <div class="task-container">
+      <ul>
+        <li>
+          <span>task....</span>
+          <i class="fa-solid fa-trash-can"></i>
+        </li>
+        <li>
+          <span>task....</span>
+          <i class="fa-solid fa-trash-can"></i>
+        </li>
+        <li>
+          <span>task....</span>
+          <i class="fa-solid fa-trash-can"></i>
+        </li>
+        <li>
+          <span>task....</span>
+          <i class="fa-solid fa-trash-can"></i>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
